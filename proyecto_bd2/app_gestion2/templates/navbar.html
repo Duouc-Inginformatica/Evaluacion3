@@ -1,0 +1,43 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minsal</title>
+    <link rel="icon" href="{% static "images/img/nav.png" %}"/>
+    <link rel="stylesheet" href="{% static 'css/stylos.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-light  fixed-top" style="background-color: rgb(17, 105, 176);">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="{% static 'img/nav.png' %}" alt="" width="80" height="60" class="d-inline-block align-text-top"></a>
+              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 sinstylo">
+                <li><a href="/index/" class="sinstylo nav-link px-2 link-light">Inicio</a></li>
+                <li><a href="/calendario/" class="sinstylo nav-link px-2 link-light">Calendario de Vacunación</a></li>
+                <li class="nav-item dropdown">
+                    <a class="sinstylo nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="/formulario/">Ingresar Vacunación</a></li>
+                      <li><a class="dropdown-item" href="/listar_todo/">Listar Personas</a></li>
+                      <li><a class="dropdown-item" href="/buscar/">Buscar persona</a></li>
+                      <li><a class="dropdown-item" href="/eliminar_persona/">Eliminar persona</a></li>
+                    </ul>            
+                  </li> 
+              </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+        </nav>
+      </div>
+      </header>
+      
+
+</body>
+</html>
